@@ -194,3 +194,22 @@ footer {
     font-size: 1em;
   }
 }
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; }
+/* Десктоп (от 768px и выше): в ряд */
+@media (min-width: 768px) {
+  .services {
+    flex-direction: row;
+  }
+}
+
+/* Мобильный (до 767px): колонна */
+@media (max-width: 767px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
