@@ -194,3 +194,15 @@ front-size: 1.5em;
 h3{front-size: 1.2em;}
   p,li {front-size: 1em;}
 }
+
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 10px;
+}
